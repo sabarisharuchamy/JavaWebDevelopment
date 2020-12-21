@@ -1,0 +1,25 @@
+import java.util.Scanner; 
+public class Main
+{
+String firstName;
+String lastName;
+public void disp(){
+    System.out.println("Your Full Name is "+firstName+" "+lastName);
+}
+  
+public static void main(String args[]){  
+Scanner in = new Scanner(System.in); 
+Main m1,m2;
+m1 = new Main();
+System.out.println("\nEnter ur firstName:\n");
+m1.firstName=in.nextLine();
+System.out.println("\nEnter ur lastName:\n");
+m1.lastName=in.nextLine(); 
+m1.disp();
+m2 = new Main();
+System.out.println("\nEnter ur firstName:\n");
+m2.firstName=in.nextLine(); 
+System.out.println("\nEnter ur lastName:\n");
+m2.lastName=in.nextLine(); 
+m2.disp();
+}

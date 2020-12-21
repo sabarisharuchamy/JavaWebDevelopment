@@ -1,0 +1,20 @@
+import java.util.Scanner; 
+  
+class Main 
+{
+    int x = 20;
+    Main(){
+       System.out.println("Default constructor is called") ;
+    }
+    public static void main(String args[]) 
+    { 
+       System.out.println("Hello World");
+       Main m1 = new Main();
+       System.out.println(m1.x);
+       m1.x=m1.getInt();
+       System.out.println(m1.x);
+    }
+    public int getInt(){
+        return 55;
+    }
+}

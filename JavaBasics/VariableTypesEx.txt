@@ -1,0 +1,24 @@
+public class Main
+{
+    int i = 10;
+    float h = 29.45f;
+    String s = "Ram";
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int j= 20;
+		Main tu = new Main();
+		System.out.println(tu.i);
+		System.out.println(tu.h);
+		System.out.println(tu.s);
+		System.out.println("Local Variable inside main "+j);
+		tu.test();
+	}
+	public void test(){
+	    Main tx = new Main();
+	    System.out.println("Instance Variables displayed");
+	    System.out.println(tx.i);
+		System.out.println(tx.h);
+		System.out.println(tx.s);
+		//System.out.println("Local Variable inside main to be accessed from test "+j);
+	}
+}

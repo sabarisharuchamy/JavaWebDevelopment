@@ -1,0 +1,36 @@
+class Main 
+{
+    private String name,age,designation;
+    Main(String name,String age,String designation){
+        this.name=name;
+        this.age=age;
+        this.designation=designation;
+    }
+    Main(String name,String age){
+        this.name=name;
+        this.age=age;
+        this.designation="Programmer trainee";
+    }
+    //public void setVal(String name,String age,String designation){
+    //    this.name=name;
+    //    this.age=age;
+    //    this.designation=designation;
+    //}
+    public void disp(){
+        System.out.println("My name is "+name);
+        System.out.println("My age is "+age);
+        System.out.println("My designation is "+designation);
+    }
+    public static void main(String args[]) 
+    { 
+       System.out.println("Hello World");
+       Main m1 = new Main("Rama","26","Software Tester");
+       //m1.setVal("Rama","26","Software Tester");
+       m1.disp();
+       Main m2 = new Main("Lakshman","29","Software Engineer");
+       //m2.setVal("Lakshman","29","Software Engineer");
+       m2.disp();
+       Main m3 = new Main("Lakshman","29");
+       m3.disp();
+    }
+}

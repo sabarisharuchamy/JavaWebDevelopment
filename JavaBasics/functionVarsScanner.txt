@@ -1,0 +1,62 @@
+import java.util.Scanner; 
+  
+class Main 
+{
+    public static void main(String args[]) 
+    { 
+        Scanner in = new Scanner(System.in);
+        Main mn = new Main();
+        mn.sum();
+        int a,b;
+        System.out.println("\nSubtraction Operation:\n");
+        System.out.println("\nEnter value for a:\n");
+        a = in.nextInt();
+        System.out.println("\nEnter value for b:\n");
+        b = in.nextInt();
+        System.out.println("Subtraction is "+mn.sub(a,b));
+        System.out.println("Multiplication is "+mn.mul());
+        System.out.println("\nMutliplication Operation:\n");
+        System.out.println("\nEnter value for a:\n");
+        a = in.nextInt();
+        System.out.println("\nEnter value for b:\n");
+        b = in.nextInt();
+        mn.div(a,b);
+    } 
+    public void sum(){//Without Argument and Without Return Value
+    Scanner in = new Scanner(System.in);
+        int a,b,result;
+        System.out.println("\nAddition Operation:\n");
+       System.out.println("\nEnter value for a:\n");
+        a = in.nextInt();
+        System.out.println("\nEnter value for b:\n");
+        b = in.nextInt();
+        result=a+b;
+        System.out.println("Addition is "+result);
+        
+    }
+    public int sub(int a,int b){//With Argument and With Return Value
+        int result;
+        result=a-b;
+        System.out.println("\nSubtraction Operation:\n");
+        return result;
+        
+    }
+    public int mul(){//Without Argument and With Return Value
+    Scanner in = new Scanner(System.in);
+       int a,b,result;
+       System.out.println("\nMutliplication Operation:\n");
+        System.out.println("\nEnter value for a:\n");
+        a = in.nextInt();
+        System.out.println("\nEnter value for b:\n");
+        b = in.nextInt();
+        result=a*b;
+        return result;
+        
+    }
+    public void div(int a,int b){//With Argument and Without Return Value
+        int result;
+        result=a/b;
+        System.out.println("Division is "+result);
+        
+    }
+}

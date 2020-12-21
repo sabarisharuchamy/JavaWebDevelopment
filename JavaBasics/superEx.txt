@@ -1,0 +1,22 @@
+class Car{//parent class
+    int speed = 90;
+}
+class Bugatti extends Car{//child class
+   int speed = 200;
+   public void disp(){
+   System.out.println("Using immediate parent class object "+super.speed);
+   }
+}
+
+public class Main
+{
+     
+    public static void main(String[] args)
+    { 
+        Bugatti bugatti = new Bugatti();
+        System.out.println(bugatti.speed);
+        bugatti.disp();
+        
+    }
+    
+}

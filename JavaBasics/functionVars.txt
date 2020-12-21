@@ -1,0 +1,37 @@
+import java.util.Scanner; 
+  
+class Main 
+{ 
+    public static void main(String args[]) 
+    { 
+        Main mn = new Main();
+        mn.sum();
+        System.out.println("Subtraction is "+mn.sub(10,5));
+        System.out.println("Multiplication is "+mn.mul());
+        mn.div(6,3);
+    } 
+    public void sum(){//Without Argument and Without Return Value
+        int a =1,b=2,result;
+        result=a+b;
+        System.out.println("Addition is "+result);
+        
+    }
+    public int sub(int a,int b){//With Argument and With Return Value
+        int result;
+        result=a+b;
+        return result;
+        
+    }
+    public int mul(){//Without Argument and With Return Value
+       int a =3,b=2,result;
+        result=a*b;
+        return result;
+        
+    }
+    public void div(int a,int b){//With Argument and Without Return Value
+        int result;
+        result=a/b;
+        System.out.println("Division is "+result);
+        
+    }
+}

@@ -1,0 +1,34 @@
+abstract class Demo //abstract class  
+{  
+//abstract method declaration  
+abstract void display();  
+}  
+class MyClass extends Demo  
+{  
+//method impelmentation  
+void display()  
+{  
+System.out.println("Abstract method1");  
+}  
+}
+class MyClass2 extends Demo  
+{  
+//method impelmentation  
+void display()  
+{  
+System.out.println("Abstract method2");  
+}  
+}
+public class Main{
+    public static void main(String args[])  
+{  
+//creating object of abstract class  
+Demo obj;
+obj= new MyClass();  
+//invoking abstract method  
+obj.display();  
+obj= new MyClass2();  
+//invoking abstract method  
+obj.display(); 
+}  
+}

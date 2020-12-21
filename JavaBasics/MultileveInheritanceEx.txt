@@ -1,0 +1,28 @@
+class Animal{//parent class//Multi level inheritance
+    public void dispAni(){
+        System.out.println("From Animal Class");
+    }
+}
+class Dog extends Animal{//first level
+    public void dispDog(){
+        System.out.println("From Dog Class");
+    }
+}
+class BabyDog extends Dog{//second level
+    public void dispBaby(){
+        System.out.println("From BabyDog Class");
+    }
+}
+public class Main
+{
+     
+    public static void main(String[] args)
+    { 
+        BabyDog babyDog = new BabyDog();
+        babyDog.dispBaby();
+        babyDog.dispDog();
+        babyDog.dispAni();
+        
+    }
+    
+}

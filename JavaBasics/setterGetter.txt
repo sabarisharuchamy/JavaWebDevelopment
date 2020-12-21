@@ -1,0 +1,26 @@
+import java.util.Scanner; 
+class Main 
+{
+    private int x;
+    public void setInt(int x){
+        this.x=x;
+    }
+    public int getInt(){
+        return x;
+    }
+    public static void main(String args[]) 
+    { 
+       System.out.println("Hello World");
+       Main2 m1 = new Main2();
+       m1.disp();
+    }
+}
+class Main2{
+    public void disp(){
+        Main m1 = new Main();
+        //m1.x= 55;
+        //System.out.println(m1.x);
+        m1.setInt(5);
+       System.out.println(m1.getInt());
+    }
+}

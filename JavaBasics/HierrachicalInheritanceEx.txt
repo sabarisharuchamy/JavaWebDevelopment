@@ -1,0 +1,31 @@
+class Employee{//parent class//Hierrachical inheritance
+    String salary = "30000";
+    
+}
+class SofwareTester extends Employee{//child class
+    String bonus="5000";
+    public void disp(){
+       System.out.println("Software Tester:\nSalary: "+salary+"\nBonus: "+bonus);
+    }
+}
+class SofwareDeveloper extends Employee{//child class
+    String bonus = "10000";
+    public void disp(){
+       System.out.println("Software Developer:\nSalary: "+salary+"\nBonus: "+bonus);
+    }
+}
+public class Main
+{
+     
+    public static void main(String[] args)
+    { 
+        SofwareTester tester = new SofwareTester();
+        System.out.println("Salary accessed from SofwareTester: "+tester.salary);
+        tester.disp();
+        SofwareDeveloper developer = new SofwareDeveloper();
+        System.out.println("Salary accessed from SofwareDeveloper: "+developer.salary);
+        developer.disp();
+        
+    }
+    
+}

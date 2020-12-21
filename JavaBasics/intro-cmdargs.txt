@@ -1,0 +1,21 @@
+4 types of Access Specifiers/Modifiers
+Public
+Private
+Protected
+Default
+4 building blocks of OOPS
+Encapsulation - all codes are only inside the class
+Polymorphism-Poly = many,Morph = form
+Abstraction- Data hiding
+Inheritance-Parent and Child Relationship
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		for(int i = 0;i<args.length;i++){
+		    System.out.println(args[i]);
+		}
+	}
+}
+

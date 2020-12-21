@@ -1,0 +1,22 @@
+class Main 
+{
+    public void disp(String name,String age,String designation){
+        System.out.println("Inside all string params");
+        System.out.println("My name is "+name+"\nMy age is  "+age+"\nMy designation is "+designation); 
+    }
+    public void disp(String name,int age,String designation){
+        System.out.println("Inside all string params but one int param");
+       System.out.println("My name is "+name+"\nMy age is  "+age+"\nMy designation is "+designation); 
+    }
+    public void disp(String name,String age){
+      System.out.println("My name is "+name+"\nMy age is  "+age);  
+    }
+    
+    public static void main(String args[]) 
+    { 
+       Main m1 = new Main();
+       m1.disp("Ram","27");
+       m1.disp("Meha","32","Senior Tech Lead");
+       m1.disp("Remya",25,"Software Engineer");
+    }
+}

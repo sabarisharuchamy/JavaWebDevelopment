@@ -1,0 +1,24 @@
+class Main2{//parent class
+    String name,designation;
+    void disp(){
+        System.out.println("My name is "+name+"\nMy designation is "+designation);
+    }
+}
+public class Main extends Main2//child class//single inheritance
+{
+    String age;
+    void dispWithAge(){
+         System.out.println("My name is "+name+"\nMy designation is "+designation+"\nMy age is "+age);
+    }
+    public static void main(String[] args)
+    { 
+        Main m1 = new Main();
+        m1.age="27";
+        m1.name="Ram";
+        m1.designation="Software Engineer";
+        m1.disp();
+        System.out.println("Calling method in child class");
+        m1.dispWithAge();
+    }
+    
+}

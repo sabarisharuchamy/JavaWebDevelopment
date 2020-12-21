@@ -1,0 +1,13 @@
+public class Main
+{
+    
+	public static void main(String[] args) {
+		int x=15;
+		System.out.println(x++);//prints 15 final 16
+		System.out.println(++x);//prints 17 final 17
+		System.out.println(x--);//prints 17 final 16
+		System.out.println(--x);//prints 15 final 15
+	
+	}
+	
+}
